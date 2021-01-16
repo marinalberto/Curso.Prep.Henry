@@ -26,10 +26,10 @@ function saludo(idioma) {
     return 'Guten Tag!';
   }else if (idioma === 'mandarin') {
     return 'Ni Hao';
-  }else if (idioma === 'ingles') {
+  } else if (idioma === 'ingles') {
     return 'Hello!';
-  }else{
-    return 'Hola!'
+  } else {
+    return 'Hola!';
   }
 }
 
@@ -70,9 +70,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 3 === 0) return 'fizz';
-  if (numero % 5 === 0) return 'buzz';
-  if (numero % 15 === 0) return 'fizzbuzz';
+  if (numero % 3 ===0 && numero % 5 === 0) {
+    return 'fizzbuzz';
+  } else if (numero % 5 === 0) {
+    return 'buzz';
+  } else if (numero % 3 === 0) {
+    return 'fizz';
+  } else
   return numero
 }
 
@@ -85,8 +89,8 @@ function esPrimo(numero) {
   
   if (numero < 2) return false;
   if (numero === 2) return true;
-  for (var i = 2; 1 < numero; i++) {
-    if (numero % i === 0){
+  for (var i = 2; i < numero; i++) {
+    if (numero % i === 0) {
       return false;
     }
     
