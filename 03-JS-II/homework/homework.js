@@ -24,7 +24,7 @@ function saludo(idioma) {
   // Tu código:
   if (idioma === 'aleman') {
     return 'Guten Tag!';
-  }else if (idioma === 'mandarin') {
+  } else if (idioma === 'mandarin') {
     return 'Ni Hao';
   } else if (idioma === 'ingles') {
     return 'Hello!';
